@@ -2,6 +2,7 @@ body {
 	background-color: rgba(217,194,234,0.7);
     padding-top: 145px;
 }
+
 img {
 	width: 100%;
 	height: auto;
@@ -48,7 +49,8 @@ section {
     padding-top: 45px;
 }
 #hello {
-    background-image: url("../images/flag.jpg");
+    background-image: url("../images/bgreene copy.png"), url("../images/flag.jpg");
+    background-repeat: no-repeat, no-repeat, no-repeat;
     background-size: cover;
 }
 #profile {
