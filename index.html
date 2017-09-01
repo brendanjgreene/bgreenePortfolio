@@ -14,7 +14,6 @@
     <!-- font awesome-->
     <link rel="stylesheet" href="font-awesome-4.5.0/css/font-awesome.css">
     <!-->
-    <!--link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bootswatch/3.3.6/journal/bootstrap.min.css"-->
 	<script src="https://cdnjs.cloudflare.com/ajax/libs/tether/1.4.0/js/tether.min.js" integrity="sha384-DztdAPBWPRXSA/3eYEEUWrWCy7G5KFbe8fFjk5JAIxUYHKkDx6Qin1DkWx51bBrb" crossorigin="anonymous"></script>
 	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.6/js/bootstrap.min.js" integrity="sha384-vBWWzlZJ8ea9aCX4pEW3rVHjgjt7zpkNpZk+02D9phzyeVkE+jo0ieGizqPLForn" crossorigin="anonymous"></script>
 	<!--my CSS-->
@@ -32,19 +31,22 @@
     <div>
         <div class="navbar-header">
             <button type="button" class="btn navbar-btn navbar-toggle" data-toggle="collapse" data-target="#myNavjbar">
-                <span class="sr-only">Toggle navigation</span>Menu <i class="fa fa-bars"></i>
+                <span class="sr-only">Toggle navigation</span><i id="bars" class="fa fa-bars"></i>
             </button>
             <div>
-                <a class="navbar-brand" href="#"><span><img src="images/bgreene.jpg" class="img-circle" > Brendan Greene</span></a>
+                <a class="navbar-brand" href="#topofpage"><span><img src="images/bgreene.jpg" class="img-circle" > Brendan Greene</span></a>
             </div>
         </div>
         <div class="collapse navbar-collapse" id="myNavjbar">
-            <ul class="nav navbar-nav navbar-right">
-                <li><a href="#hello" data-target="hello" >Hello</a></li>
-                <li><a href="#skills" data-target="skills" >Skills</a></li>
-                <li><a href="#work-education" data-target="workandeducation" >Work &amp; Education</a></li>
-                <li><a href="#portfolio" data-target="portfolio" >Portfolio</a></li>
-                <li><a href="#contacts" data-target="contacts" >Contacts</a></li>
+            <ul class="nav navbar-nav navbar-right pull-right">
+                <li data-toggle="collapse" data-target="#myNavjbar.in"><a href="#hello" data-target="hello" >Hello</a></li>
+                <li data-toggle="collapse" data-target="#myNavjbar.in"><a href="#skills" data-target="skills" >Skills</a></li>
+                <li data-toggle="collapse" data-target="#myNavjbar.in"><a href="#work-education" data-target="workandeducation" >Work &amp; Education</a></li>
+                <li data-toggle="collapse" data-target="#myNavjbar.in"><a href="#portfolio" data-target="portfolio" >Portfolio</a></li>
+                <li data-toggle="collapse" data-target="#myNavjbar.in"><a href="#contacts" data-target="contacts" >Contacts</a></li>
+                <li><a type="button" class="btn navbar-btn navbar-toggle" data-toggle="collapse" data-target="#myNavjbar">
+                <span class="sr-only" data-toggle="collapse" data-target="#myNavjbar">Toggle navigation</span><i id="bars" class="fa fa-times"></i>
+                </a></li>
             </ul>
         </div>
     </div>
@@ -66,11 +68,30 @@
 </section>
 <section id="skills">
     <div class="container">
-
-    <h1>Skills</h1>
-        <p>
-            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Praesentium ut sunt tenetur ad cumque soluta delectus rerum debitis cum accusamus esse repellendus sed quibusdam, sequi adipisci architecto modi enim velit.Lorem ipsum dolor sit amet, consectetur adipisicing elit. Beatae, labore ullam. Facere quisquam nam odio ad perferendis, debitis! Labore dolorem minus pariatur praesentium expedita delectus alias fugit esse consectetur est!
-        </p>
+        <h1>Skills</h1>
+        <div class="col-sm-6">
+            <ul>
+                <h2>Technical Skills</h2>
+                <li><img src="icons/html.png"> HTML5</li>
+                <li><img src="icons/css.png"> CSS</li>
+                <li><img src="icons/bootstrap.png"> Bootstrap</li>
+                <li><img src="icons/python.png" > Python</li>
+                <li><img src="icons/django.png" alt=""> Django</li>
+                <li><img src="icons/flask.png" alt=""> Flask</li>
+                <li><img src="icons/jquery.png" alt=""> jQuery</li>
+                <li><img src="icons/javascript.png" alt=""> JavaScript</li>
+                <li><img src="icons/github.png" alt=""> GitHub</li>
+                <li><img src="icons/angular.png" alt=""> AngularJS</li>
+                <li><img src="icons/sql.jpg" alt=""> mySQL & SQLite</li>
+                <li><img src="icons/d3.png" alt=""> d3.js & <img src="icons/dc.logo.png" alt="">dc.js</li>
+            </ul>
+        </div>
+        <div class="col-sm-6">
+            <ul dir="rtl">
+                <h2>Personal Skills</h2>
+                <li>Interpersonal skills gained from working with a wide range people of varying abilities and backgrounds both in the United States and Ireland</li>
+                </ul>
+        </div>
     </div>
 </section>
 <section id="work-education">
@@ -83,7 +104,7 @@
             </blockquote>
             <blockquote class="blockquote-reverse">
                 <h3>Supportive Employment Specialist</h3>
-                <p>Hospitaller Order of St. John of Go, Bluebell, Dublin 12 – 2002-2003</p>
+                <p>Hospitaller Order of St. John of God, Bluebell, Dublin 12 – 2002-2003</p>
             </blockquote>
             <blockquote class="blockquote-reverse">
                 <h3>Quality Assurance Manager II, AHRC-MSC Unit; New York, NY, USA – 2001-2002</h3>
@@ -98,10 +119,10 @@
         <div class="col-sm-2 text-center">
                 <h2>&</h2>
             <div class="hidden-sm-down">
-            <img src="images/30559.png" alt="">
+            <img src="icons/stress.png" alt="">
             <img src="images/books.jpg" alt="">
-            <img src="images/work1600.png" alt="">
-            <img src="images/grad.png" alt="">
+            <img src="icons/wrench.png" alt="">
+            <img src="icons/grad.png" alt="">
             
             </div>
         </div>
@@ -146,13 +167,13 @@
                         <!-- Wrapper for slides -->
                         <div class="carousel-inner">
                             <div class="item active" >
-                                <img class="img-responsive center-block" src="portfolio/afc-laptop.png">
+                                <img class="img-responsive center-block" src="screenshots/afc-laptop.png">
                             </div>
                             <div class="item" >
-                                <img class="img-responsive center-block" src="portfolio/afc-mobil.PNG">
+                                <img class="img-responsive center-block" src="screenshots/afc-mobil.PNG">
                             </div>
                             <div class="item" >
-                                <img class="img-responsive center-block" src="portfolio/pink-yellow-laptop.png">
+                                <img class="img-responsive center-block" src="screenshots/pink-yellow-laptop.png">
                             </div>
                         </div>
                         <!-- Left and right controls -->
@@ -185,10 +206,10 @@
                         <!-- Wrapper for slides -->
                         <div class="carousel-inner">
                             <div class="item active" >
-                                <img class="img-responsive center-block" src="portfolio/suzie1-laptop.png">
+                                <img class="img-responsive center-block" src="screenshots/suzie1-laptop.png">
                             </div>
                             <div class="item" >
-                                <img class="img-responsive center-block" src="portfolio/suzie2-laptop.png">
+                                <img class="img-responsive center-block" src="screenshots/suzie2-laptop.png">
                             </div>
                         </div>
                         <!-- Left and right controls-->
@@ -221,10 +242,10 @@
                         <!-- Wrapper for slides -->
                         <div class="carousel-inner">
                             <div class="item active" >
-                                <img class="img-responsive center-block" src="portfolio/laptop-dash.png">
+                                <img class="img-responsive center-block" src="screenshots/laptop-dash.png">
                             </div>
                             <div class="item" >
-                                <img class="img-responsive center-block" src="portfolio/mobile.dash.png">
+                                <img class="img-responsive center-block" src="screenshots/mobile.dash.png">
                             </div>
                         </div>
                         <!-- Left and right controls >
@@ -258,13 +279,13 @@
                         <!-- Wrapper for slides -->
                         <div class="carousel-inner">
                             <div class="item active" >
-                                <img class="img-responsive center-block" src="portfolio/anti-soc1.png">
+                                <img class="img-responsive center-block" src="screenshots/anti-soc1.png">
                             </div>
                             <div class="item" >
-                                <img class="img-responsive center-block" src="portfolio/anti-soc2.png">
+                                <img class="img-responsive center-block" src="screenshots/anti-soc2.png">
                             </div>
                             <div class="item" >
-                                <img class="img-responsive center-block" src="portfolio/mobile.anti-social.png">
+                                <img class="img-responsive center-block" src="screenshots/mobile.anti-social.png">
                             </div>
                         </div>
                         <!-- Left and right controls-->
@@ -286,10 +307,10 @@
     <div class="container">
 
     <h1>Contact Me</h1>
-        <a href="#topofpage">go back up</a>
         <p>
             Lorem ipsum dolor sit amet, consectetur adipisicing elit. Praesentium ut sunt tenetur ad cumque soluta delectus rerum debitis cum accusamus esse repellendus sed quibusdam, sequi adipisci architecto modi enim velit.Lorem ipsum dolor sit amet, consectetur adipisicing elit. Beatae, labore ullam. Facere quisquam nam odio ad perferendis, debitis! Labore dolorem minus pariatur praesentium expedita delectus alias fugit esse consectetur est!
         </p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Facere impedit iure iusto, laboriosam libero odit repellendus sapiente? Ad aperiam architecto cupiditate, facilis fugiat itaque nihil nostrum numquam quia suscipit totam?
+        <a href="#topofpage">go back up</a>
     </div>
 </section>
 <section></section>
@@ -298,7 +319,6 @@
 <script src="js/scroll.js"></script>
 <script src="js/onscroll.js"></script>
 <script src="js/carousel.js"></script>
-<script src="js/autoclose.js"></script>
 </body>
 </html>
 
