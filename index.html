@@ -6,8 +6,7 @@
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 	<title>Brendan Greene - Portfolio - Website</title>
 	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.6/css/bootstrap.min.css" integrity="sha384-rwoIResjU2yc3z8GV/NPeZWAv56rSmLldC3R/AZzGRnGxQQKnKkoFVhFQhNUwEyJ" crossorigin="anonymous">
-<link rel="shortcut icon"
- href="images/bgreene.jpg" />
+    <link rel="shortcut icon" href="images/bgreenecopy.png" />
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
@@ -30,11 +29,13 @@
 <nav id="target" class="navbar navbar-fixed-top">
     <div>
         <div class="navbar-header">
-            <button type="button" class="btn navbar-btn navbar-toggle" data-toggle="collapse" data-target="#myNavjbar">
-                <span class="sr-only">Toggle navigation</span><i id="bars" class="fa fa-bars"></i>
+            <button type="button" class="btn navbar-btn navbar-toggle collapsed" data-toggle="collapse" data-target="#myNavjbar">
+                <span class="sr-only">Toggle navigation</span>
+                <i id="bars" class="fa fa-bars"></i>
+                <i id="times" class="fa fa-times"></i>
             </button>
             <div>
-                <a class="navbar-brand" href="#topofpage"><span><img src="images/bgreene.jpg" class="img-circle" > Brendan Greene</span></a>
+                <a class="navbar-brand" href="#topofpage"><span><img src="images/bgreenecopy.png" class="img-circle" > Brendan Greene</span></a>
             </div>
         </div>
         <div class="collapse navbar-collapse" id="myNavjbar">
@@ -44,9 +45,6 @@
                 <li data-toggle="collapse" data-target="#myNavjbar.in"><a href="#work-education" data-target="workandeducation" >Work &amp; Education</a></li>
                 <li data-toggle="collapse" data-target="#myNavjbar.in"><a href="#portfolio" data-target="portfolio" >Portfolio</a></li>
                 <li data-toggle="collapse" data-target="#myNavjbar.in"><a href="#contacts" data-target="contacts" >Contacts</a></li>
-                <li><a type="button" class="btn navbar-btn navbar-toggle" data-toggle="collapse" data-target="#myNavjbar">
-                <span class="sr-only" data-toggle="collapse" data-target="#myNavjbar">Toggle navigation</span><i id="bars" class="fa fa-times"></i>
-                </a></li>
             </ul>
         </div>
     </div>
@@ -66,7 +64,7 @@
         </p>
     </div>
 </section>
-<section id="skills">
+<section class="container" id="skills">
     <div class="container">
         <h1>Skills</h1>
         <div class="col-sm-6">
@@ -90,7 +88,7 @@
             <ul dir="rtl">
                 <h2>Personal Skills</h2>
                 <li>Interpersonal skills gained from working with a wide range people of varying abilities and backgrounds both in the United States and Ireland</li>
-                </ul>
+            </ul>
         </div>
     </div>
 </section>
@@ -303,18 +301,20 @@
         </div>
     </div>
 </section>
-<section id="contacts">
-    <div class="container">
 
-    <h1>Contact Me</h1>
-        <p>
-            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Praesentium ut sunt tenetur ad cumque soluta delectus rerum debitis cum accusamus esse repellendus sed quibusdam, sequi adipisci architecto modi enim velit.Lorem ipsum dolor sit amet, consectetur adipisicing elit. Beatae, labore ullam. Facere quisquam nam odio ad perferendis, debitis! Labore dolorem minus pariatur praesentium expedita delectus alias fugit esse consectetur est!
-        </p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Facere impedit iure iusto, laboriosam libero odit repellendus sapiente? Ad aperiam architecto cupiditate, facilis fugiat itaque nihil nostrum numquam quia suscipit totam?
-        <a href="#topofpage">go back up</a>
+<footer id="contacts">
+    <div class="container-fluid">
+        <div class="footer">
+            <ul class="list-inline" id="social">
+                <li><a href="https://www.facebook.com/BrendanJGreene" target="_blank" ><i class="fa fa-facebook fa-5x" aria-label="facebook"></i></a></li>
+                <li><a href="mailto:brendanjgreene@gmail.com"><i class="fa fa-envelope fa-5x" aria-label="sendemail"></i></a></li>
+                <li><a href="https://twitter.com/StraffanGreene" target="_blank"><i class="fa fa-twitter fa-5x" aria-label="twitter"></i></a></li>
+                <li><a href="https://github.com/brendanjgreene" target="_blank"><i class="fa fa-github fa-5x" aria-label="you tube"></i></a></li>
+            </ul>
+
+        </div>
     </div>
-</section>
-<section></section>
-<footer></footer>
+</footer>
 </div>
 <script src="js/scroll.js"></script>
 <script src="js/onscroll.js"></script>
