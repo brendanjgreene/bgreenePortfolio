@@ -59,9 +59,10 @@ section {
     padding-top: 45px;
 }
 #hello {
-    background-image: url("../images/bgreenecopy.png"), url("../images/flag.jpg");
-    background-repeat: repeat, no-repeat;
-    background-size: contain, cover;
+    background-image: url("../images/bgreenecopy.png");
+    background-size: 45%;
+    background-position: bottom right;
+    background-repeat: no-repeat;
 }
 #profile {
     background-image: url("../images/irish-flag14.jpg");
@@ -155,7 +156,6 @@ footer {
     left: 0;
     right: 0;
     padding-top: 15px;
-    margin-top: -87px; /* negative value of footer height */
     position: relative;
     text-align: center;
 }
