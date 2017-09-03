@@ -6,7 +6,7 @@ function scrollFunction() {
     } else {
         document.getElementById("target").classList.remove("hsmall");
     } if (document.body.scrollTop > 500 || document.documentElement.scrollTop > 500) {
-        document.getElementById("backToTop").style.display = "block";
+        document.getElementById("backToTop").style.display = "inline-block";
     } else {
         document.getElementById("backToTop").style.display = "none";
     }
