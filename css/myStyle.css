@@ -158,3 +158,9 @@ footer {
     position: relative;
     text-align: center;
 }
+pre {
+    display: block;
+    color: black;
+    height: auto;
+    width: auto;
+}
