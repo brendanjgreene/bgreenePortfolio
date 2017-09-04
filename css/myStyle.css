@@ -1,5 +1,5 @@
 body {
-	background-color: rgba(217,194,234,0.7);
+	background-color: rgba(217,194,234,1.0);
     padding-top: 145px;
 }
 
@@ -28,10 +28,7 @@ nav img {
     width: 108px;
     height: 72px;
 }
-/*nav.hsmall nav {
-    margin-top: 15px;
-    margin-right: 25px;
-}*/
+
 nav.hsmall #myNavjbar > ul {
     margin-top: 5px;
 }
@@ -58,12 +55,7 @@ nav.hsmall {
 section {
     padding-top: 45px;
 }
-#hello {
-    background-image: url("../images/bgreenecopy.png");
-    background-size: 45%;
-    background-position: bottom right;
-    background-repeat: no-repeat;
-}
+
 #profile {
     background-image: url("../images/irish-flag14.jpg");
     background-size: cover;
@@ -71,6 +63,7 @@ section {
 #backToTop {
     display: none; /* Hidden by default */
     background-color: #337ab7;
+    border: 5px solid rgba(217,194,234,1.0);
     color: rgba(0,0,0,0.85);
     position: fixed;
     bottom: 22px;
@@ -80,12 +73,13 @@ section {
     border-radius: 50%;
 }
 @media(max-width:767px){
-  #backToTop {
-      bottom: 100px;
-  }
-}
-nav .navbar-brand {
-    height: auto;
+    #backToTop {
+        bottom: 100px;
+    }
+    .navbar-brand{
+        font-size: 1em;
+    }
+
 }
 #myNavjbar > ul{
     display: inline;
@@ -115,6 +109,7 @@ nav .navbar-btn {
 }
 nav .navbar-brand{
     padding: 30px 0 0 0;
+    height: auto;
 }
 .navbar-right {
     color: rgba(217,194,234,0.7);
@@ -158,9 +153,19 @@ footer {
     position: relative;
     text-align: center;
 }
-pre {
-    display: block;
-    color: black;
-    height: auto;
-    width: auto;
+section {
+    overflow: scroll;
+    min-height: 100vh;
+}
+.mybutton{
+    color: #337ab7;
+    background-color: rgba(0,0,0,0.85);
+    margin: 10px;
+}
+#myCode {
+    overflow: scroll;
+}
+#skills,
+#portfolio {
+    background-color: #337ab7;
 }
