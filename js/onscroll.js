@@ -5,7 +5,7 @@ function scrollFunction() {
         document.getElementById("target").classList.add("hsmall");
     } else {
         document.getElementById("target").classList.remove("hsmall");
-    } if (document.body.scrollTop > 500 || document.documentElement.scrollTop > 500) {
+    } if (document.body.scrollTop > 300 || document.documentElement.scrollTop > 300) {
         document.getElementById("backToTop").style.display = "inline-block";
     } else {
         document.getElementById("backToTop").style.display = "none";
