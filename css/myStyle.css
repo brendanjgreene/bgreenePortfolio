@@ -16,6 +16,9 @@ nav img {
     width: 108px;
     height: 72px;
 }
+.navbar-header {
+    margin-bottom: 12px;
+}
 
 nav.hsmall #myNavjbar > ul {
     margin-top: 5px;
@@ -116,6 +119,9 @@ nav .navbar-brand{
     position: absolute;
     top: 0;
 }
+/*.carousel-indicators {
+  bottom:-50px; this will make indicators below images but breaks hover functionality of next css
+}*/
 .carousel .carousel-control { visibility: hidden; }
 .carousel:hover .carousel-control { visibility: visible; }
 .carousel .carousel-indicators { visibility: hidden; }
@@ -134,6 +140,10 @@ nav .navbar-brand{
 .navbar-btn.collapsed #times {
     display: none;
 }
+section {
+    overflow: scroll;
+    min-height: 100vh;
+}
 footer {
     background-color: rgba(0,0,0,0.85);
     color: rgba(217,194,234,1.0);
@@ -147,10 +157,6 @@ footer {
 }
 footer a {
     color: rgba(217,194,234,1.0);
-}
-section {
-    overflow: scroll;
-    min-height: 100vh;
 }
 .mybutton{
     color: #337ab7;
@@ -169,6 +175,81 @@ section {
     background-image: url("../images/hair.jpg");
     background-size: contain;
 }
-.navbar-header {
-    margin-bottom: 12px;
+/*#USA {
+    background: url(../images/flag.jpg) repeat-x;
+    background-size: 100%;
+    color: white;
+}*/
+.clip-text{
+    font-size: 4em;
+    font-weight: bold;
+    line-height: 1;
+    position: relative;
+    display: inline-block;
+    /*margin: .25em;
+    padding: .5em .75em;*/
+    text-align: center;
+    /* Color fallback */
+    color: #fff;
+    -webkit-background-clip: text;
+
+    -webkit-text-fill-color: transparent;
+}
+#USA {
+    font-size: 6em;
+    background-image: url("../images/flag.jpg");
+    background-size: 100%;
+}
+#Ireland {
+    background-image: url("../images/irish-flag14.jpg");
+    background-size: 100%;
+}
+#bsalert {
+    font-size: 1.5em;
+    text-align: justify;
+    text-justify: kashida;
+    line-height: 1;
+    display: inline-block;
+    vertical-align: middle;
+    background-color: rgba(0,0,0,0.65);
+    color: antiquewhite;
+}
+#yanks {
+    font-size: 3em;
+    background-image: url("../images/pinstripes.jpg");
+    background-size: 25%;
+}
+#hi {
+    font-size: 8em;
+    background-color: yellow;
+}
+#bg {
+    font-size: 2.25em;
+    color: green;
+}
+#brendan {
+    font-size: 1.5em;
+    color: rgba(50,36,128,0.95);
+}
+#girls {
+    position: relative;
+    font-size: 2.5em;
+    color: pink;
+}
+#caroline {
+    font-size: 2.5em;
+    color: red;
+}
+.bluespan {
+    font-size: 1.3em;
+    color: rgba(50,36,128,0.95);
+    text-shadow: 0 0 0.2em #FF0000;
+}
+#hair {
+    position: absolute;
+    width: 300%;
+    padding-top: 1em;
+    font-size: .2em;
+    color: black;
+    text-shadow: 0 0 0.2em #FF0000;
 }

@@ -38,7 +38,7 @@
         </div>
         <div class="collapse navbar-collapse" id="myNavjbar">
             <ul class="nav navbar-nav navbar-right pull-right">
-                <li data-toggle="collapse" data-target="#myNavjbar.in"><a href="#hello" data-target="hello" >Hi!</a></li>
+                <li data-toggle="collapse" data-target="#myNavjbar.in"><a href="#hello" data-target="hello" >alert(Hi!);</a></li>
                 <li data-toggle="collapse" data-target="#myNavjbar.in"><a href="#skills" data-target="skills" >Skills</a></li>
                 <li data-toggle="collapse" data-target="#myNavjbar.in"><a href="#work-education" data-target="workandeducation" >Experience</a></li>
                 <li data-toggle="collapse" data-target="#myNavjbar.in"><a href="#portfolio" data-target="portfolio" >Portfolio</a></li>
@@ -55,26 +55,32 @@
         } $("#btn").on("click", toggleAlert);
         $('#bsalert').on('close.bs.alert', toggleAlert)
     </script>
-    <div class="container">
-        <h1 class="text-center">alert( 'Hello, world!' );</h1>
+    <div class="container-fluid">
+        <h1 class="text-center" onmouseover="toggleAlert();">alert( 'Hi!' );</h1>
         <div class="row">
-            <div class="col-sm-4">
+            <!--div class="col-sm-4">
                 <div id="me" onmouseover="toggleAlert();">
                     <p>I say hello</p>
                     <img src="images/bgreenecopy.png" class="img-circle" >
                 </div>
-            </div>
-            <div class="col-sm-4">
-                <div class="alert fade out" id="bsalert">
-                    <strong>Hi!</strong> My Name Is <strong>Brendan Greene!</strong><br>
-                    I live in Straffan, County Kildare, Ireland. <br>
-                    I am originally from Vestal, NY, United States of America! <br>
-                    I am enthusiastic Web Designer and I love Running! <br>
-                    I am also a big fan of New York Yankees Baseball! <br>
-                    I am married and have three Cool and Sporty girls who like to think of themselves as Irish and American! <br>
+            </div-->
+            <div class="col-sm-6">
+                <div class="alert fade in" id="bsalert">
+                    <strong class="clip-text" id="hi">Hi!</strong>
+                    My Name Is
+                    <strong id="bg"><Span id="brendan">Brendan</Span> Greene!</strong>
+                    I live in Straffan, Co. Kildare, <span class="clip-text" id="Ireland">Ireland</span>
+                    with my wife <span id="caroline">Caroline</span> and our three <br><span id="girls">girls!<span id="hair">that's our youngest's hair in the background</span></span>
+                    I am an enthusiastic <span class="bluespan">Web Designer.</span>
+                    I'm an avid <span class="bluespan">Runner</span>
+                    and I am a big fan of <span class="bluespan">New York</span>
+                    <span class="clip-text" id="yanks"> Yankees</span> Baseball!
+                    Originally from <span style="color: green;">Vestal,</span>
+                    <span class="bluespan">NY</span> in the good ole'
+                    <span class="clip-text" id="USA">USA!</span>
                 </div>
             </div>
-            <div id="myCode" class="col-sm-4">
+            <div id="myCode" class="col-sm-6" onmouseover="toggleAlert();">
 <xmp>
     <script>
         function toggleAlert(){
@@ -83,13 +89,19 @@
         } $("#btn").on("click", toggleAlert);
         $('#bsalert').on('close.bs.alert', toggleAlert)
     </script>
-    <div class="alert fade out" id="bsalert">
-        <strong>Hi!</strong> My Name Is <strong>Brendan Greene!</strong><br>
-        I live in Straffan, County Kildare, Ireland. <br>
-        I am originally from Vestal, NY, United States of America! <br>
-        I am enthusiastic Web Designer and I love Running! <br>
-        I am also a big fan of New York Yankees Baseball! <br>
-        I am married and have three Cool and Sporty girls who like to think of themselves as Irish and American! <br>
+    <div class="alert fade in" id="bsalert">
+        <strong class="clip-text" id="hi">Hi!</strong>
+        My Name Is
+        <strong id="bg"><Span id="brendan">Brendan</Span> Greene!</strong>
+        I live in Straffan, Co. Kildare, <span class="clip-text" id="Ireland">Ireland</span>
+        with my wife <span id="caroline">Caroline</span> and our three <span id="girls">girls!</span>
+        I am an enthusiastic <span class="bluespan">Web Designer.</span>
+        I'm an avid <span class="bluespan">Runner</span>
+        and I am a big fan of <span class="bluespan">New York</span>
+        <span class="clip-text" id="yanks"> Yankees</span> Baseball!
+        Originally from <span style="color: green;">Vestal,</span>
+        <span class="bluespan">NY</span> in the good ole'
+        <span class="clip-text" id="USA">USA!</span>
     </div>
     <div id="sub1" onmouseover="toggleAlert();">
         <p>I say hello</p>
@@ -100,9 +112,23 @@
         </div>
 </section>
 <section id="skills">
-    <div class="container">
+    <div class="container-fluid">
         <h1 class="text-center">Skills</h1>
         <div class="row">
+        <div class="col-sm-5">
+            <ul dir="rtl">
+                <h2>Personal</h2>
+                <li>Persistence</li>
+                <li>Patience</li>
+                <li>Caring</li>
+                <li>Creativity</li>
+                <li>Task Analysis</li>
+                <li>Collaboration</li>
+            </ul>
+        </div>
+        <div class="col-sm-2 text-center">
+                <h2>&</h2>
+        </div>
         <div class="col-sm-5">
             <ul>
                 <h2>Technical</h2>
@@ -120,15 +146,6 @@
                 <li><img src="icons/d3.png" alt=""> d3.js & <img src="icons/dc.logo.png" alt="">dc.js</li>
             </ul>
         </div>
-        <div class="col-sm-2 text-center">
-                <h2>&</h2>
-        </div>
-        <div class="col-sm-5">
-            <ul dir="rtl">
-                <h2>Personal</h2>
-                <li>Interpersonal skills gained from working with a wide range people of varying abilities and backgrounds both in the United States and Ireland</li>
-            </ul>
-        </div>
         </div>
     </div>
 </section>
@@ -141,23 +158,28 @@
             <h2 class="text-right">Work</h2>
             <blockquote class="blockquote-reverse">
                 <h3>Social Care Worker</h3>
-                <p>Kare; Newbridge, Kildare – 2003-2016</p>
+                <p>2003-2016</p>
+                <p>Kare; Newbridge, Kildare</p>
             </blockquote>
             <blockquote class="blockquote-reverse">
                 <h3>Supportive Employment Specialist</h3>
-                <p>Hospitaller Order of St. John of God; Bluebell, Dublin 12 – 2002-2003</p>
+                <p>2002-2003</p>
+                <p>Hospitaller Order of St. John of God; Bluebell, Dublin 12</p>
             </blockquote>
             <blockquote class="blockquote-reverse">
                 <h3>Quality Assurance Manager</h3>
-                <p>AHRC-MSC Unit; New York, NY, USA – 2001-2002</p>
+                <p>2001-2002</p>
+                <p>AHRC-MSC Unit; New York, NY, USA</p>
             </blockquote>
             <blockquote class="blockquote-reverse">
                 <h3>Behaviourist-Living Skills Trainer</h3>
-                <p>Altamount TBI Program; Menands, NY, USA – 1998-2001</p>
+                <p>1998-2001</p>
+                <p>Altamount TBI Program; Menands, NY, USA</p>
             </blockquote>
             <blockquote class="blockquote-reverse">
                 <h3>Community Resource Trainer</h3>
-                <p>AHRC-TBI Services; New York, NY, USA – 1994-1998</p>
+                <p>1994-1998</p>
+                <p>AHRC-TBI Services; New York, NY, USA</p>
             </blockquote>
         </div>
         <div class="col-sm-2 text-center">
@@ -178,14 +200,17 @@
             </blockquote>
             <blockquote>
                 <h3>MA - Community Psychology</h3>
-                <p>Sage Graduate School; Albany, NY - 2000</p>
+                <p>2000</p>
+                <p>Sage Graduate School; Albany, NY</p>
             </blockquote>
             <blockquote>
                 <h3>BA - Psychology and Studio Art</h3>
-                <p>State University of New York; Stony Brook, NY - 1993</p>
+                <p>1993</p>
+                <p>State University of New York; Stony Brook, NY</p>
             </blockquote>
             <blockquote>
                 <h3>NY State Regent's Diploma</h3>
+                <p>1989</p>
                 <p>Seton Catholic Central High School; Binghamton, NY - 1989</p>
             </blockquote>
             <button type="button" class="btn btn-block mybutton">
@@ -196,60 +221,59 @@
     </div>
 </section>
 <section id="portfolio">
-    <div class="container">
+    <div class="container-fluid">
         <h1>My Portfolio</h1>
         <div class="row">
-            <div class="col-sm-12">
-                <div class="col-sm-4">
-                    <h2>Straffan AFC</h2>
-                    <p>I made this site for my Local Football Club using <strong>Python</strong> and the <strong>Django</strong> Framework.
-                        The Club's Managers and Administrators can Login and manage player information as well as other administrative tasks while maintaining the privacy of the players personal information.
-                        I also used <strong>"Beautiful Soup"</strong> to pull the schedule of upcoming games of the League website and present it to the users in a more readable format.
-                        The Club Logo, Club Name and Colors as well as GPS location are customisable in the Django administration panel and I hope that other clubs might like to use my format for their own website.
-                        An Example is shown in the screen shoots of the fictional "Yellow and Pink Club".
-                        I continually add more features to the website as the Club begins using the site and giving me feedback.</p>
-                        <a class="btn mybutton" href="https://straffanafc.herokuapp.com/" target="_blank">See the Site <i class="fa fa-link"></i></a>
-                        <a class="btn mybutton" href="https://github.com/brendanjgreene/StraffanAFC" target="_blank">See the Code <i class="fa fa-github"></i></a>
-                </div>
-                <div id="myCarouselContainer" class="col-sm-8">
-                    <div id="myCarousel" class="carousel slide" data-ride="carousel">
-                        <!-- Indicators -->
-                        <ol class="carousel-indicators">
-                            <li data-target="#myCarousel" data-slide-to="0" class="active"></li>
-                            <li data-target="#myCarousel" data-slide-to="1" class=""></li>
-                            <li data-target="#myCarousel" data-slide-to="2" class=""></li>
-                        </ol>
-                        <!-- Wrapper for slides -->
-                        <div class="carousel-inner">
-                            <div class="item active" >
-                                <img class="img-responsive center-block" src="screenshots/afc-laptop.png">
-                            </div>
-                            <div class="item" >
-                                <img class="img-responsive center-block" src="screenshots/afc-mobil.PNG">
-                            </div>
-                            <div class="item" >
-                                <img class="img-responsive center-block" src="screenshots/pink-yellow-laptop.png">
-                            </div>
+            <div class="col-sm-4">
+                <h2>Straffan AFC</h2>
+                <p>I made this site for my Local Football Club using <strong>Python</strong> and the <strong>Django</strong> Framework.
+                    The Club's Managers and Administrators can Login and manage player information as well as other administrative tasks while maintaining the privacy of the players personal information.
+                    I also used <strong>"Beautiful Soup"</strong> to pull the schedule of upcoming games of the League website and present it to the users in a more readable format.
+                    The Club Logo, Club Name and Colors as well as GPS location are customisable in the Django administration panel and I hope that other clubs might like to use my format for their own website.
+                    An Example is shown in the screen shoots of the fictional "Yellow and Pink Club".
+                    I continually add more features to the website as the Club begins using the site and giving me feedback.</p>
+            </div>
+            <div id="myCarouselContainer" class="col-sm-8">
+                <div id="myCarousel" class="carousel slide" data-ride="carousel">
+                    <!-- Indicators -->
+                    <ol class="carousel-indicators">
+                        <li data-target="#myCarousel" data-slide-to="0" class="active"></li>
+                        <li data-target="#myCarousel" data-slide-to="1" class=""></li>
+                        <li data-target="#myCarousel" data-slide-to="2" class=""></li>
+                    </ol>
+                    <!-- Wrapper for slides -->
+                    <div class="carousel-inner">
+                        <div class="item active" >
+                            <img class="img-responsive center-block" src="screenshots/afc-laptop.png">
                         </div>
-                        <!-- Left and right controls -->
-                        <!--a class="left carousel-control" href="#myCarousel" data-slide="prev">
-                            <span class="glyphicon glyphicon-chevron-left"></span>
-                            <span class="sr-only">Previous</span>
-                        </a>
-                        <a class="right carousel-control" href="#myCarousel" data-slide="next">
-                            <span class="glyphicon glyphicon-chevron-right"></span>
-                            <span class="sr-only">Next</span>
-                        </a-->
+                        <div class="item" >
+                            <img class="img-responsive center-block" src="screenshots/afc-mobil.png">
+                        </div>
+                        <div class="item" >
+                            <img class="img-responsive center-block" src="screenshots/pink-yellow-laptop.png">
+                        </div>
                     </div>
+                    <!-- Left and right controls -->
+                    <!--a class="left carousel-control" href="#myCarousel" data-slide="prev">
+                        <span class="glyphicon glyphicon-chevron-left"></span>
+                        <span class="sr-only">Previous</span>
+                    </a>
+                    <a class="right carousel-control" href="#myCarousel" data-slide="next">
+                        <span class="glyphicon glyphicon-chevron-right"></span>
+                        <span class="sr-only">Next</span>
+                    </a-->
                 </div>
+            </div>
+            <div class="col-sm-4">
+                    <a class="btn mybutton" href="https://straffanafc.herokuapp.com/" target="_blank">See the Site <i class="fa fa-link"></i></a>
+                    <a class="btn mybutton" href="https://github.com/brendanjgreene/StraffanAFC" target="_blank">See the Code <i class="fa fa-github"></i></a>
             </div>
         </div>
         <hr>
         <div class="row">
-            <div class="col-sm-12">
                 <div class="col-sm-4">
                     <h2>Suzie & the Hepcats</h2>
-                    <p>This is the <strong>First</strong> project for the <strong>Code Institute Full Stack Developer Diploma</strong>. It utilises <strong>Angular.js</strong> to handle routing and build custom directives. It utilises <strong>Bootstrap</strong> for a simple and responsive layout.
+                    <p>This is the <strong>First</strong> project for the <strong>Code Institute Full Stack Developer Diploma</strong>. It utilises <strong>Angular.js</strong> to handle routing and build custom directives and <strong>Bootstrap</strong> for a simple and responsive layout.
                         <strong>Features include:</strong>
                     </p>
                     <ul>
@@ -262,9 +286,6 @@
                         <li>Social links to Facebook, Vimeo, YouTube and Twitter</li>
                         <li>Alert boxes in bootsrap style</li>
                     </ul>
-                    <p>Deployed using:<strong> GitHub Pages</strong></p>
-                    <a class="btn mybutton" href="https://brendanjgreene.github.io/stream1Project" target="_blank">See the Site <i class="fa fa-link"></i></a>
-                    <a class="btn mybutton" href="https://github.com/brendanjgreene/stream1Project" target="_blank">See the Code <i class="fa fa-github"></i></a>
                 </div>
                 <div id="myCarouselContainer" class="col-sm-8">
                     <div id="myCarousel1" class="carousel slide" data-ride="carousel">
@@ -293,15 +314,18 @@
                         </a-->
                     </div>
                 </div>
+            <div class="col-sm-4">
+                <p>Deployed using:<strong> GitHub Pages</strong></p>
+                <a class="btn mybutton" href="https://brendanjgreene.github.io/stream1Project" target="_blank">See the Site <i class="fa fa-link"></i></a>
+                <a class="btn mybutton" href="https://github.com/brendanjgreene/stream1Project" target="_blank">See the Code <i class="fa fa-github"></i></a>
             </div>
         </div>
         <hr>
         <div class="row">
-            <div class="col-sm-12">
                 <div class="col-sm-4">
                     <h2>School Donations Dashboard</h2>
                     <p>This is the <strong>Second</strong> project for the <strong>Code Institute Full Stack Developer Diploma</strong>.  Using a dataset from DonorsChoose.org I built a data visualization that represents school donations broken down by different attributes over a timeline.
-                        I organised the presentation layer and to make it visually appealing through html and css and bootstrap classes.
+                        I organised the presentation layer and made it visually appealing through html and css and bootstrap classes.
                     </p>
                     <strong>Tech Used include</strong>
                         <ul>
@@ -345,11 +369,9 @@
                         </a-->
                     </div>
                 </div>
-            </div>
         </div>
         <hr>
         <div class="row">
-            <div class="col-sm-12">
                 <div class="col-sm-4">
                     <h2>Anti-Social</h2>
                     <p>This is the <strong>Second</strong> project for the <strong>Code Institute Full Stack Developer Diploma</strong>.</p>
@@ -395,7 +417,6 @@
                         </a-->
                     </div>
                 </div>
-            </div>
         </div>
     </div>
 </section>
