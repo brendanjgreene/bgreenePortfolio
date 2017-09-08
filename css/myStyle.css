@@ -145,7 +145,7 @@ footer a {
 .mybutton{
     color: #337ab7;
     background-color: rgba(0,0,0,0.85);
-    margin: auto;
+    margin: 5px auto;
 }
 #myCode {
     overflow: scroll;
