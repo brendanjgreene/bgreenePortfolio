@@ -46,7 +46,7 @@ nav.hsmall {
 }
 section {
     padding: 45px 0 45px 0;
-    overflow: scroll;
+    overflow: hidden;
     min-height: 100vh;
 }
 #profile {
