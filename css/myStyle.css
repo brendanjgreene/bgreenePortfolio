@@ -189,8 +189,6 @@ footer a {
 }
 #bsalert {
     font-size: 1.5em;
-    text-align: justify;
-    text-justify: kashida;
     line-height: 1;
     display: inline-block;
     vertical-align: middle;
@@ -235,4 +233,7 @@ footer a {
     font-size: .2em;
     color: black;
     text-shadow: 0 0 0.2em #FF0000;
+}
+.noPadding {
+    padding: 0;
 }

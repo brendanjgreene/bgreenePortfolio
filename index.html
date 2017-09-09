@@ -56,8 +56,8 @@
     </script>
     <div class="container-fluid">
         <h1 class="text-center" onmouseover="toggleAlert();">alert( 'Hi!' );</h1>
-        <div class="col-sm-12">
-            <div class="col-sm-6">
+        <div class="col-sm-12 noPadding">
+            <div class="col-sm-6 noPadding">
                 <div class="alert fade in" id="bsalert">
                     <strong class="clip-text" id="hi">Hi!</strong>
                     My Name Is
@@ -73,33 +73,38 @@
                     <span class="clip-text" id="USA">USA!</span>
                 </div>
             </div>
-            <div id="myCode" class="col-sm-6" onmouseover="toggleAlert();">
+            <div id="myCode" class="col-sm-6 noPadding" onmouseover="toggleAlert();">
 <xmp>
-    <script>
-        function toggleAlert(){
-            $(".alert").toggleClass('in out');
-            return false;
-        } $("#btn").on("click", toggleAlert);
-        $('#bsalert').on('close.bs.alert', toggleAlert)
-    </script>
-    <div class="alert fade in" id="bsalert">
-        <strong class="clip-text" id="hi">Hi!</strong>
-        My Name Is
-        <strong id="bg"><Span id="brendan">Brendan</Span> Greene!</strong>
-        I live in Straffan, Co. Kildare, <span class="clip-text" id="Ireland">Ireland</span>
-        with my wife <span id="caroline">Caroline</span> and our three <span id="girls">girls!</span>
-        I am an enthusiastic <span class="bluespan">Web Designer.</span>
-        I'm an avid <span class="bluespan">Runner</span>
-        and I am a big fan of <span class="bluespan">New York</span>
-        <span class="clip-text" id="yanks"> Yankees</span> Baseball!
-        Originally from <span style="color: green;">Vestal,</span>
-        <span class="bluespan">NY</span> in the good ole'
-        <span class="clip-text" id="USA">USA!</span>
-    </div>
-    <div id="sub1" onmouseover="toggleAlert();">
-        <p>I say hello</p>
-        <img src="images/bgreenecopy.png" class="img-circle" >
-    </div>
+<script>
+    function toggleAlert(){
+        $(".alert").toggleClass('in out');
+        return false;
+    } $("#btn").on("click", toggleAlert);
+    $('#bsalert').on('close.bs.alert', toggleAlert)
+</script>
+<div class="alert fade in" id="bsalert">
+    <strong class="clip-text" id="hi">Hi!</strong>
+    My Name Is <strong id="bg"><Span id="brendan">
+    Brendan</Span> Greene!</strong>
+    I live in Straffan, Co. Kildare,
+    <span class="clip-text" id="Ireland">Ireland</span>
+    with my wife
+    <span id="caroline">Caroline</span> and our three
+    <span id="girls"> girls!</span>
+    I am an enthusiastic <span class="bluespan">
+    Web Designer.</span>
+    I'm an avid <span class="bluespan">
+    Runner</span>and I am a big fan of
+    <span class="bluespan">New York</span>
+    <span class="clip-text" id="yanks">
+        Yankees</span> Baseball!
+    Originally from <span style="color: green;">
+    Vestal,</span>
+    <span class="bluespan">NY</span>
+    in the good ole'
+    <span class="clip-text" id="USA">
+        USA!</span>
+</div>
 </xmp>
             </div>
         </div>
