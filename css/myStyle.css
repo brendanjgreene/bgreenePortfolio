@@ -180,11 +180,11 @@ footer a {
 }
 #USA {
     font-size: 6em;
-    background-image: url("../images/flag.jpg");
+    background-image: url("../images/flag-min.jpg");
     background-size: 100%;
 }
 #Ireland {
-    background-image: url("../images/irish-flag14.jpg");
+    background-image: url("../images/irish-flag14-min.jpg");
     background-size: 100%;
 }
 #bsalert {
