@@ -175,7 +175,6 @@ footer a {
     /* Color fallback */
     color: #fff;
     -webkit-background-clip: text;
-
     -webkit-text-fill-color: transparent;
 }
 #USA {
@@ -186,6 +185,7 @@ footer a {
 #Ireland {
     background-image: url("../images/irish-flag14-min.jpg");
     background-size: 100%;
+    color: black;
 }
 #bsalert {
     font-size: 1.5em;
@@ -199,6 +199,7 @@ footer a {
     font-size: 3em;
     background-image: url("../images/pinstripes.jpg");
     background-size: 25%;
+    color: blue;
 }
 #hi {
     font-size: 8em;
